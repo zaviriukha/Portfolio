@@ -20,9 +20,9 @@ function closeMenu() {
   <div class="z-50">
     <!-- Burger Button -->
     <button
-        @click="isOpen = true"
         class="p-2 text-gray-800 dark:text-white"
         aria-label="Open menu"
+        @click="isOpen = true"
     >
       <Icon name="mdi:menu" class="w-10 h-10 text-accent" />
     </button>
@@ -35,9 +35,9 @@ function closeMenu() {
         <div class="w-64 h-full bg-white dark:bg-gray-800 shadow-lg p-6 flex flex-col">
           <!-- Close Button -->
           <button
-              @click="closeMenu"
               class="self-end mb-6"
               aria-label="Close menu"
+              @click="closeMenu"
           >
             <Icon name="mdi:close" class="w-8 h-8 text-accent dark:text-white" />
           </button>
