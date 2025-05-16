@@ -9,16 +9,21 @@
       <div class="hidden xl:flex items-center justify-center gap-8">
         <NavMenu/>
         <NuxtLink href="/contact">
-          <button>Hire me</button>
+          <button
+              class="bg-accent text-primary hover:bg-accent-hover hover:text-white h-[44px] px-6 py-2 md:h-[48px] md:px-6 md:rounded-xl lg:px-8 lg:text-sm lg:uppercase lg:tracking-[2px]">
+            Hire me
+          </button>
         </NuxtLink>
       </div>
 
       <div class="xl:hidden">
-        mob nav
+        <MobMenu/>
       </div>
 
     </div>
   </header>
 </template>
 <script setup lang="ts">
+import MobMenu from "~/components/navigation/MobMenu.vue";
+import NavMenu from "~/components/navigation/NavMenu.vue";
 </script>
