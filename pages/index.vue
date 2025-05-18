@@ -2,7 +2,7 @@
 
 import Cv from "~/components/btn/cv.vue";
 import AppPhoto from "~/components/AppPhoto.vue";
-import Stats from "~/components/stats/Stats.vue";
+// import Stats from "~/components/stats/Stats.vue";
 </script>
 
 <template>
@@ -24,7 +24,7 @@ import Stats from "~/components/stats/Stats.vue";
               <BtnSocial/>
             </div>
           </div>
-          <Stats />
+<!--          <Stats />-->
         </div>
         <div class="order-1 xl:order-none mb-8 xl:mb-0">
           <AppPhoto/>
