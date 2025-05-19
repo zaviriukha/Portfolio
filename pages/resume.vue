@@ -2,19 +2,17 @@
 import {ref} from 'vue'
 import SkillsTab from "~/components/tabs/SkillsTab.vue";
 import ExperienceTab from "~/components/tabs/ExperienceTab.vue";
-import AboutTab from "~/components/tabs/AboutTab.vue";
 import EducationTab from "~/components/tabs/EducationTab.vue";
 import CertificationsTab from "~/components/tabs/CertificationsTab.vue";
 
 const tabs = [
-  {id: 'about', label: 'About'},
   {id: 'experience', label: 'Experience'},
   {id: 'skills', label: 'Skills'},
   {id: 'education', label: 'Education'},
   {id: 'certifications', label: 'Certifications'},
 ]
 
-const activeTab = ref('about')
+const activeTab = ref('experience')
 
 </script>
 
@@ -49,11 +47,7 @@ const activeTab = ref('about')
 
         <!-- Tab Content -->
         <div class="flex-1">
-          <div v-if="activeTab === 'about'" class="space-y-4">
-            <AboutTab />
-          </div>
-
-          <div v-else-if="activeTab === 'experience'">
+          <div v-if="activeTab === 'experience'">
             <ExperienceTab />
           </div>
 

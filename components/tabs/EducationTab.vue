@@ -27,7 +27,7 @@ const education = {
         :key="index"
         class="bg-gray-800 p-4 rounded"
     >
-      <div class="text-2xl font-semibold text-white">{{ item.degree }}</div>
+      <div class="text-xl font-semibold text-white">{{ item.degree }}</div>
       <div class="font-semibold text-white">{{ item.institution }}</div>
       <div class="text-sm text-gray-400">{{ item.duration }}</div>
     </div>

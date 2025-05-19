@@ -25,7 +25,7 @@ const certifications = {
         :key="index"
         class="bg-gray-800 p-4 rounded"
     >
-      <div class="text-2xl font-semibold text-white">{{ item.company }}</div>
+      <div class="text-xl font-semibold text-white">{{ item.company }}</div>
       <div class="text-sm text-gray-400">{{ item.data }}</div>
     </div>
   </div>
