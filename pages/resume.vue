@@ -24,7 +24,7 @@ const activeTab = ref('experience')
       enter-to-class="opacity-100"
   >
     <section class="h-full flex flex-col justify-center py-0">
-      <div class="container flex flex-col xl:flex-row gap-6 max-w-6xl ">
+      <div class="container flex flex-col xl:flex-row gap-6">
         <!-- Tabs -->
         <div class="overflow-x-auto xl:overflow-visible">
           <div class="flex xl:flex-col gap-4 shrink-0 flex-nowrap w-max md:w-auto">
