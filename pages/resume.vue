@@ -23,11 +23,11 @@ const activeTab = ref('experience')
       enter-from-class="opacity-0"
       enter-to-class="opacity-100"
   >
-    <section>
-      <div class="container flex flex-col md:flex-row gap-6 max-w-6xl mx-auto py-8">
+    <section class="h-full flex flex-col justify-center py-0">
+      <div class="container flex flex-col xl:flex-row gap-6 max-w-6xl ">
         <!-- Tabs -->
-        <div class="overflow-x-auto md:overflow-visible">
-          <div class="flex md:flex-col gap-4 shrink-0 flex-nowrap w-max md:w-auto">
+        <div class="overflow-x-auto xl:overflow-visible">
+          <div class="flex xl:flex-col gap-4 shrink-0 flex-nowrap w-max md:w-auto">
             <button
                 v-for="tab in tabs"
                 :key="tab.id"

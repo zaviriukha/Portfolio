@@ -4,9 +4,9 @@ import {ref, onMounted} from 'vue'
 const showServices = ref(false)
 
 const services = [
-  {num: '01', title: 'Front-end Developer, Vue,js', description: 'Front-end Developer'},
-  {num: '02', title: 'Pim-Core Developer', description: 'Front-end Developer'},
-  {num: '03', title: 'Shopware6 Developer', description: 'Front-end Developer'},
+  {num: '01', title: 'Vue Developer', description: 'Developing Vue.js modules based on client-provided designs and adapting them to work within a specific platform (Styla frontend) where they are hosted.'},
+  {num: '02', title: 'Pim-Core Developer', description: 'Developing custom modules, implementing templates, integrating with data systems, and extending platform functionality.'},
+  {num: '03', title: 'Shopware 6 Developer', description: 'Setting up and developing custom CMS modules, integrating client APIs, and ensuring stable website operation'},
 ]
 
 onMounted(() => {
@@ -43,7 +43,7 @@ onMounted(() => {
                 <Icon class="text-primary text-3xl" name="mdi:arrow-bottom-right"/>
               </NuxtLink>
             </div>
-            <h2 class="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
+            <h2 class="text-[38px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
               {{ service.title }}</h2>
             <p class="text-white/80">{{ service.description }}</p>
             <div class="border-b border-white/20 w-full"/>
