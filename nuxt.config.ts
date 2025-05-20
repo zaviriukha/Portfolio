@@ -10,7 +10,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
-    'v-gsap-nuxt'
+    'v-gsap-nuxt',
+    'nuxt-swiper'
   ],
   css: ['@/assets/css/app.css'],
   fonts: {
