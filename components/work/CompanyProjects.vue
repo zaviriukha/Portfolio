@@ -7,7 +7,7 @@ const projects = [
     company: "Blackbit digital Commerce GmbH",
     description: "A series of projects involving the development of Vue components based on the Styla Frontend platform.",
     stack: [{name: "Vue.js"}, {name: "JS"}, {name: "Сss"}, {name: "Styla"}],
-    image: "/img/slider/joop.png",
+    image: "/img/slider/joop.webp",
     live: "https://joop.com/int/en/",
     github: ""
   },
@@ -17,7 +17,7 @@ const projects = [
     company: "Blackbit digital Commerce GmbH",
     description: "A series of projects involving the development of Vue components based on the Styla Frontend platform.",
     stack: [{name: "Vue.js"}, {name: "JS"}, {name: "Сss"}, {name: "Styla"}],
-    image: "/img/slider/windsor.png",
+    image: "/img/slider/windsor.webp",
     live: "https://windsor.de/eu/en/",
     github: ""
   },
@@ -27,7 +27,7 @@ const projects = [
     company: "Blackbit digital Commerce GmbH",
     description: "A series of projects involving the development of Vue components based on the Styla Frontend platform.",
     stack: [{name: "Vue.js"}, {name: "JS"}, {name: "Сss"}, {name: "Styla"}],
-    image: "/img/slider/strellson.png",
+    image: "/img/slider/strellson.webp",
     live: "https://strellson.com/int/en/",
     github: ""
   },
@@ -37,7 +37,7 @@ const projects = [
     company: "Blackbit digital Commerce GmbH",
     description: "Shopware 6 e-commerce project.",
     stack: [{name: "Shopware"}, {name: "Twig"}, {name: "SCSS"}],
-    image: "/img/slider/bense.png",
+    image: "/img/slider/bense.webp",
     live: "https://www.bense-eicke.de/",
     github: ""
   },
@@ -47,7 +47,7 @@ const projects = [
     company: "Blackbit digital Commerce GmbH",
     description: "Shopware 6 e-commerce project.",
     stack: [{name: "Shopware"}, {name: "Twig"}, {name: "SCSS"}],
-    image: "/img/slider/fitstore.png",
+    image: "/img/slider/fitstore.webp",
     live: "https://www.fitstore24.com/",
     github: ""
   },
@@ -57,7 +57,7 @@ const projects = [
     company: "Blackbit digital Commerce GmbH",
     description: "Vue components for BigCommerce project.",
     stack: [{name: "BigCommerce"}, {name: "Vue"}, {name: "SCSS"}],
-    image: "/img/slider/expresso.png",
+    image: "/img/slider/expresso.webp",
     live: "https://shop.expresso.de/sackkarre-universal-type-2-011-21-201121/",
     github: ""
   }

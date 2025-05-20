@@ -6,7 +6,7 @@ const pets = [
     category: "Frontend",
     description: "My Portfolio. You already here!",
     stack: [{name: "Vue.js"}, {name: "Nuxt"}, {name: "Tailwind"}],
-    image: "/img/slider/portfolio.png",
+    image: "/img/slider/portfolio.webp",
     live: "https://vue3-currency.netlify.app/",
     github: "https://github.com/zaviriukha/Portfolio"
   },
@@ -15,7 +15,7 @@ const pets = [
     category: "Frontend",
     description: "Search and display of information about films and TV series using the TMDB API. Built with Vue and Vite, styled with Tailwind CSS.",
     stack: [{name: "Vue.js"}, {name: "JS"}, {name: "Tailwind"}, {name: "Vite"}],
-    image: "/img/slider/films-search.png",
+    image: "/img/slider/films-search.webp",
     live: "https://site-for-films.netlify.app/",
     github: "https://github.com/zaviriukha/films-search"
   },
@@ -24,7 +24,7 @@ const pets = [
     category: "Frontend",
     description: "An updated version of films-search. Created with Nuxt and styled with Vuetify.",
     stack: [{name: "Vue.js"}, {name: "TS"}, {name: "Nuxt"}, {name: "Vuetify"}],
-    image: "/img/slider/films-search-2.png",
+    image: "/img/slider/films-search-2.webp",
     live: "https://films-search-2.netlify.app/",
     github: "https://github.com/zaviriukha/films-search-2.0"
   },
@@ -33,7 +33,7 @@ const pets = [
     category: "Frontend",
     description: "Project based on Vue 3 and API of the National Bank of Ukraine (NBU).",
     stack: [{name: "Vue.js"}, {name: "Pinia"}, {name: "Tailwind"}],
-    image: "/img/slider/currency.png",
+    image: "/img/slider/currency.webp",
     live: "https://vue3-currency.netlify.app/",
     github: "https://github.com/zaviriukha/currency"
   }
