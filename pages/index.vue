@@ -8,10 +8,11 @@ import Cv from "~/components/btn/cv.vue";
     <div class="container mx-auto h-full">
       <div class="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
         <div class="text-center xl:text-left order-2 xl:order-none">
-          <span class="text-xl text-gray-800">Front-end Developer</span>
-          <h2 class="h1 mb-6 text-gray-800">
-            Hello I'm<br/> <span class="text-accent">Valeriia Zaviriukha</span>
+
+          <h2 class="h1   text-gray-800">
+            Valeriia Zaviriukha
           </h2>
+          <p class="h2 text-accent mb-8">Front-end Developer</p>
           <p class="max-w-[480px] mb-9 text-gray-800">
             Extensive experience in Front-end development using Vue.js, Pimcore CMS and Shopware 6. Skilled in
             e-commerce development in Germany and Ukraine.</p>
