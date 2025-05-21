@@ -1,4 +1,12 @@
 <script setup lang="ts">
+import { ref } from "vue";
+
+const loadedImages = ref<Record<number, boolean>>({});
+
+const handleImageLoad = (index: number) => {
+  loadedImages.value[index] = true;
+};
+
 const projects = [
   {
     title: "JOOP!",
@@ -89,10 +97,17 @@ const projects = [
       class="bg-gray-800 p-6 rounded-xl h-full flex flex-col justify-between"
     >
       <div>
+        <div
+          v-if="!loadedImages[index]"
+          class="rounded-xl mb-4 h-48 w-full bg-gray-700 animate-pulse"
+        />
+
         <img
+          v-show="loadedImages[index]"
           :src="project.image"
           :alt="project.title"
-          class="rounded-xl mb-4 h-48 w-full object-cover"
+          class="rounded-xl mb-4 h-48 w-full object-cover transition-opacity duration-500"
+          @load="handleImageLoad(index)"
         >
 
         <div class="text-sm text-accent mb-1">{{ project.category }}</div>

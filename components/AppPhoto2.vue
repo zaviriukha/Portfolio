@@ -1,8 +1,17 @@
+<script setup lang="ts">
+import { ref } from "vue";
+
+const isLoaded = ref(false);
+
+const handleLoad = () => {
+  isLoaded.value = true;
+};
+</script>
+
 <template>
   <div
     class="relative mx-auto w-[300px] sm:w-[320px] xl:w-[498px] aspect-square"
   >
-    <!-- SVG с анимированным градиентом -->
     <svg
       class="absolute inset-0 w-full h-full pointer-events-none z-0"
       viewBox="0 0 100 100"
@@ -46,14 +55,19 @@
       />
     </svg>
 
-    <!-- Фото -->
     <div class="absolute inset-0 flex items-center justify-center z-10">
+      <div
+        v-if="!isLoaded"
+        class="w-[88%] h-[88%] rounded-full bg-gray-700 animate-pulse"
+      />
+
       <NuxtImg
+        v-show="isLoaded"
         src="/img/image.webp"
         alt="me"
-        class="rounded-full object-cover w-[88%] h-[88%]"
+        class="rounded-full object-cover w-[88%] h-[88%] transition-opacity duration-500"
+        @load="handleLoad"
       />
     </div>
   </div>
 </template>
-<script setup lang="ts"></script>

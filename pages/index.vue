@@ -25,10 +25,8 @@ import Cv from "~/components/btn/cv.vue";
               <BtnSocial />
             </div>
           </div>
-          <!--          <Stats />-->
         </div>
         <div class="order-1 xl:order-none mb-8 xl:mb-0">
-          <!--          <AppPhoto/>-->
           <AppPhoto2 />
         </div>
       </div>

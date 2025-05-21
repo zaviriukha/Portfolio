@@ -1,4 +1,12 @@
 <script setup lang="ts">
+import { ref } from "vue";
+
+const loadedImages = ref<Record<number, boolean>>({});
+
+const handleImageLoad = (index: number) => {
+  loadedImages.value[index] = true;
+};
+
 const pets = [
   {
     title: "Portfolio",
@@ -55,28 +63,35 @@ const pets = [
 <template>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-10">
     <div
-      v-for="(pet, index) in pets"
+      v-for="(project, index) in pets"
       :key="index"
       class="bg-gray-800 p-6 rounded-xl h-full flex flex-col justify-between"
     >
       <div>
+        <div
+          v-if="!loadedImages[index]"
+          class="rounded-xl mb-4 h-48 w-full bg-gray-700 animate-pulse"
+        />
+
         <img
-          :src="pet.image"
-          :alt="pet.title"
-          class="rounded-xl mb-4 h-48 w-full object-cover"
+          v-show="loadedImages[index]"
+          :src="project.image"
+          :alt="project.title"
+          class="rounded-xl mb-4 h-48 w-full object-cover transition-opacity duration-500"
+          @load="handleImageLoad(index)"
         >
 
-        <div class="text-sm text-accent mb-1">{{ pet.category }}</div>
+        <div class="text-sm text-accent mb-1">{{ project.category }}</div>
         <h3 class="text-xl font-semibold text-white mb-2 uppercase">
-          {{ pet.title }}
+          {{ project.title }}
         </h3>
 
-        <p class="text-gray-100 text-sm mb-4">{{ pet.description }}</p>
+        <p class="text-gray-100 text-sm mb-4">{{ project.description }}</p>
       </div>
 
       <div class="flex flex-wrap gap-2 mb-4">
         <span
-          v-for="tech in pet.stack"
+          v-for="tech in project.stack"
           :key="tech.name"
           class="text-xs px-2 py-1 rounded bg-gray-700 text-gray-100"
         >
@@ -86,16 +101,16 @@ const pets = [
 
       <div class="flex gap-4 mt-auto">
         <a
-          v-if="pet.live"
-          :href="pet.live"
+          v-if="project.live"
+          :href="project.live"
           target="_blank"
           class="text-sm text-accent underline hover:text-gray-100"
         >
           Live
         </a>
         <a
-          v-if="pet.github"
-          :href="pet.github"
+          v-if="project.github"
+          :href="project.github"
           target="_blank"
           class="text-sm text-accent underline hover:text-gray-100"
         >
