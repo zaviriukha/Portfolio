@@ -7,13 +7,12 @@
         </h1>
       </NuxtLink>
       <div class="hidden xl:flex items-center justify-center gap-8">
-        <NavMenu/>
+        <NavMenu />
       </div>
 
       <div class="xl:hidden">
-        <MobMenu/>
+        <MobMenu />
       </div>
-
     </div>
   </header>
 </template>

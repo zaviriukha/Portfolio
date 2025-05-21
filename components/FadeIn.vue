@@ -5,6 +5,6 @@
 </template>
 
 <script setup>
-import { useMotion } from '@vueuse/motion'
-useMotion()
+import { useMotion } from "@vueuse/motion";
+useMotion();
 </script>

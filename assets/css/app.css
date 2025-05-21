@@ -3,25 +3,23 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply font-mono bg-primary text-white leading-loose;
-    }
-    .h1 {
-        @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
-    }
-    .h2 {
-        @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
-    }
-    .h3 {
-        @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
-    }
-    .text-outline {
-        -webkit-text-stroke: 1px #1F2937;
-    }
+  body {
+    @apply font-mono bg-primary text-white leading-loose;
+  }
+  .h1 {
+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
+  }
+  .h2 {
+    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
+  }
+  .h3 {
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+  }
+  .text-outline {
+    -webkit-text-stroke: 1px #1f2937;
+  }
 
-    .text-outline-hover {
-        -webkit-text-stroke: 1px #A349A3;
-    }
-
+  .text-outline-hover {
+    -webkit-text-stroke: 1px #a349a3;
+  }
 }
-
