@@ -1,7 +1,8 @@
 <template>
   <div class="w-full h-full relative">
     <div
-        class="flex justify-center items-center mix-blend-lighten w-[300px] h-[300px] md:w-[320px] md:h-[320px] xl:w-[498px] xl:h-[498px]">
+        class="flex justify-center items-center w-[300px] h-[300px] md:w-[320px] md:h-[320px] xl:w-[498px] xl:h-[498px]">
+      <!-- mix-blend-lighten -->
       <transition
           enter-active-class="transition-opacity duration-1000 ease-in"
           enter-from-class="opacity-0"

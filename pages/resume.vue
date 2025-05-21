@@ -35,7 +35,7 @@ const activeTab = ref('experience')
                 :class="[
             'px-4 py-2 rounded font-medium text-left whitespace-nowrap transition-all duration-300',
             activeTab === tab.id
-              ? 'bg-accent text-gray-800'
+              ? 'bg-accent text-gray-100'
               : 'bg-gray-800 text-gray-100 hover:bg-gray-700'
           ]"
                 @click="activeTab = tab.id"

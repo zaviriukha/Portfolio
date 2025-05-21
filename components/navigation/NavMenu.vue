@@ -4,7 +4,7 @@
           v-for="link in links"
           :key="link.to"
           :to="link.to"
-          class="hover:text-accent transition-all capitalize font-medium"
+          class="hover:text-accent transition-all capitalize font-medium text-gray-800"
           :class="{ 'text-accent border-b-2 border-accent': $route.path === link.to }"
       >
         {{ link.label }}

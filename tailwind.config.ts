@@ -25,10 +25,10 @@ const config: Config = {
                 mono: ['"Fira Code"', 'monospace']
             },
             colors: {
-                primary: '#1c1c22',
+                primary: '#A3E0FE',
                 accent: {
-                    DEFAULT: '#00ff99',
-                    hover: '#00e187'
+                    DEFAULT: '#CA2585',
+                    hover: '#A349A3'
                 }
             }
         }

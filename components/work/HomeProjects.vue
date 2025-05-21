@@ -52,21 +52,21 @@ const pets = [
             :src="pet.image"
             :alt="pet.title"
             class="rounded-xl mb-4 h-48 w-full object-cover"
-        />
+        >
 
         <div class="text-sm text-accent mb-1">{{ pet.category }}</div>
         <h3 class="text-xl font-semibold text-white mb-2 uppercase">
           {{ pet.title }}
         </h3>
 
-        <p class="text-gray-400 text-sm mb-4">{{ pet.description }}</p>
+        <p class="text-gray-100 text-sm mb-4">{{ pet.description }}</p>
       </div>
 
       <div class="flex flex-wrap gap-2 mb-4">
             <span
                 v-for="tech in pet.stack"
                 :key="tech.name"
-                class="text-xs px-2 py-1 rounded bg-gray-700 text-white"
+                class="text-xs px-2 py-1 rounded bg-gray-700 text-gray-100"
             >
               {{ tech.name }}
             </span>
@@ -77,7 +77,7 @@ const pets = [
             v-if="pet.live"
             :href="pet.live"
             target="_blank"
-            class="text-sm text-accent underline hover:text-white"
+            class="text-sm text-accent underline hover:text-gray-100"
         >
           Live
         </a>
@@ -85,7 +85,7 @@ const pets = [
             v-if="pet.github"
             :href="pet.github"
             target="_blank"
-            class="text-sm text-accent underline hover:text-white"
+            class="text-sm text-accent underline hover:text-gray-100"
         >
           Code
         </a>

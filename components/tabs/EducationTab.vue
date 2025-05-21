@@ -18,7 +18,7 @@ const education = {
 </script>
 
 <template>
-  <h2 class="mb-4 text-2xl font-bold flex justify-start items-center">{{ education.title }}
+  <h2 class="text-gray-800 mb-4 text-2xl font-bold flex justify-start items-center">{{ education.title }}
     <Icon class="ml-2" :name="education.icon"/>
   </h2>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -27,7 +27,7 @@ const education = {
         :key="index"
         class="bg-gray-800 p-4 rounded"
     >
-      <div class="text-xl font-semibold text-white">{{ item.degree }}</div>
+      <div class="text-xl font-semibold text-accent">{{ item.degree }}</div>
       <div class="font-semibold text-white">{{ item.institution }}</div>
       <div class="text-sm text-gray-400">{{ item.duration }}</div>
     </div>

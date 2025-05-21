@@ -15,8 +15,8 @@ const activeTab = ref<'company' | 'home'>('company')
             :class="[
             'px-6 py-2 rounded-full font-medium transition-colors duration-300',
             activeTab === 'company'
-              ? 'bg-accent text-gray-900'
-              : 'bg-gray-800 text-gray-200 hover:bg-gray-700'
+              ? 'bg-accent text-gray-100'
+              : 'bg-gray-800 text-gray-100 hover:bg-gray-700'
           ]"
             @click="activeTab = 'company'"
         >
@@ -26,8 +26,8 @@ const activeTab = ref<'company' | 'home'>('company')
             :class="[
             'px-6 py-2 rounded-full font-medium transition-colors duration-300',
             activeTab === 'home'
-              ? 'bg-accent text-gray-900'
-              : 'bg-gray-800 text-gray-200 hover:bg-gray-700'
+              ? 'bg-accent text-gray-100'
+              : 'bg-gray-800 text-gray-100 hover:bg-gray-700'
           ]"
             @click="activeTab = 'home'"
         >
