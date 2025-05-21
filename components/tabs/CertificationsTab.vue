@@ -16,7 +16,7 @@ const certifications = {
 </script>
 
 <template>
-  <h2 class="mb-4 text-2xl font-bold flex justify-start items-center">{{ certifications.title }}
+  <h2 class="mb-4 text-2xl font-bold flex justify-start items-center text-gray-800">{{ certifications.title }}
     <Icon class="ml-2" :name="certifications.icon"/>
   </h2>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -25,7 +25,7 @@ const certifications = {
         :key="index"
         class="bg-gray-800 p-4 rounded"
     >
-      <div class="text-xl font-semibold text-white">{{ item.company }}</div>
+      <div class="text-xl font-semibold text-accent">{{ item.company }}</div>
       <div class="text-sm text-gray-400">{{ item.data }}</div>
     </div>
   </div>

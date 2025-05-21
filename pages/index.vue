@@ -1,8 +1,6 @@
 <script setup lang="ts">
 
 import Cv from "~/components/btn/cv.vue";
-import AppPhoto from "~/components/AppPhoto.vue";
-// import Stats from "~/components/stats/Stats.vue";
 </script>
 
 <template>
@@ -10,11 +8,12 @@ import AppPhoto from "~/components/AppPhoto.vue";
     <div class="container mx-auto h-full">
       <div class="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
         <div class="text-center xl:text-left order-2 xl:order-none">
-          <span class="text-xl">Front-end Developer</span>
-          <h2 class="h1 mb-6">
-            Hello I'm<br/> <span class="text-accent">Valeriia Zaviriukha</span>
+
+          <h2 class="h1   text-gray-800">
+            Valeriia Zaviriukha
           </h2>
-          <p class="max-w-[480px] mb-9 text-white/80">
+          <p class="h2 text-accent mb-8">Front-end Developer</p>
+          <p class="max-w-[480px] mb-9 text-gray-800">
             Extensive experience in Front-end development using Vue.js, Pimcore CMS and Shopware 6. Skilled in
             e-commerce development in Germany and Ukraine.</p>
 
@@ -27,7 +26,8 @@ import AppPhoto from "~/components/AppPhoto.vue";
 <!--          <Stats />-->
         </div>
         <div class="order-1 xl:order-none mb-8 xl:mb-0">
-          <AppPhoto/>
+<!--          <AppPhoto/>-->
+          <AppPhoto2/>
         </div>
       </div>
     </div>

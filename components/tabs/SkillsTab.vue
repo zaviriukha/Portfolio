@@ -57,7 +57,7 @@ const skills = {
 </script>
 
 <template>
-  <h2 class="mb-4 text-2xl font-bold flex justify-start items-center">{{ skills.title }}
+  <h2 class="mb-4 text-2xl font-bold flex justify-start items-center text-gray-800">{{ skills.title }}
     <Icon class="ml-2" :name="skills.icon"/>
   </h2>
   <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">

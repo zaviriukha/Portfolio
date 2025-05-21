@@ -36,19 +36,19 @@ const experience = {
 </script>
 
 <template>
-  <h2 class="mb-4 text-2xl font-bold flex justify-start items-center">{{ experience.title }}
+  <h2 class="mb-4 text-2xl font-bold flex justify-start items-center text-gray-800">{{ experience.title }}
     <Icon class="ml-2" :name="experience.icon"/>
   </h2>
-  <p class="text-gray-300 pb-2">{{ experience.description }}</p>
-  <p class="text-gray-300 pb-2">{{ experience.description3 }}</p>
+  <p class="text-gray-800 pb-2">{{ experience.description }}</p>
+  <p class="text-gray-800 pb-2">{{ experience.description3 }}</p>
   <ul
       v-for="communication in experience.communications"
       :key="communication.text"
-      class="text-gray-300 list-disc pl-8 pb-2"
+      class="text-gray-800 list-disc pl-8 pb-2"
   >
     <li>{{ communication.text }}</li>
   </ul>
-  <p class="text-gray-300 mb-4">{{ experience.description2 }}</p>
+  <p class="text-gray-800 mb-4">{{ experience.description2 }}</p>
 
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
     <div
@@ -56,7 +56,7 @@ const experience = {
         :key="index"
         class="bg-gray-800 p-4 rounded"
     >
-      <h2 class="text-xl font-semibold text-white">{{ item.company }}</h2>
+      <h2 class="text-xl font-semibold text-accent">{{ item.company }}</h2>
       <h3 class="font-semibold text-white">{{ item.position }}</h3>
       <div class="text-sm text-gray-400">{{ item.duration }}</div>
     </div>

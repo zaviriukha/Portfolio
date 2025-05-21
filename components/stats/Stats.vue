@@ -3,7 +3,6 @@ import Vue3autocounter from 'vue3-autocounter'
 
 const experiences = [
   { num: '7', text: 'Years of experience' },
-  // { num: '6', text: 'Known technologies' },
   { num: '15', text: 'Completed projects' }
 ]
 </script>
@@ -16,15 +15,15 @@ const experiences = [
         class="flex flex-col items-center"
     >
       <Vue3autocounter
-          :startAmount="0"
-          :endAmount="+experience.num"
+          :start-amount="0"
+          :end-amount="+experience.num"
           :duration="2.5"
           suffix=""
           :autoinit="true"
           class="text-4xl font-bold text-accent"
       />
       <p
-          class="mt-1 text-sm text-white/80 text-center"
+          class="mt-1 text-sm text-gray-800 text-center"
           :class="experience.text.length < 15 ? 'max-w-[100px]' : 'max-w-[150px]'"
       >
         {{ experience.text }}

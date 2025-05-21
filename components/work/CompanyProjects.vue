@@ -83,16 +83,16 @@ const projects = [
           {{ project.title }}
         </h3>
 
-        <p class="text-gray-400 text-sm mb-4">{{ project.description }}</p>
+        <p class="text-gray-100 text-sm mb-4">{{ project.description }}</p>
       </div>
 
-      <div class="text-sm text-white mb-1">{{ project.company }}</div>
+      <div class="text-sm text-gray-100 mb-1">{{ project.company }}</div>
 
       <div class="flex flex-wrap gap-2 mb-4">
             <span
                 v-for="tech in project.stack"
                 :key="tech.name"
-                class="text-xs px-2 py-1 rounded bg-gray-700 text-white"
+                class="text-xs px-2 py-1 rounded bg-gray-700 text-gray-100"
             >
               {{ tech.name }}
             </span>
@@ -103,7 +103,7 @@ const projects = [
             v-if="project.live"
             :href="project.live"
             target="_blank"
-            class="text-sm text-accent underline hover:text-white"
+            class="text-sm text-accent underline hover:text-gray-100"
         >
           Live
         </a>
@@ -111,7 +111,7 @@ const projects = [
             v-if="project.github"
             :href="project.github"
             target="_blank"
-            class="text-sm text-accent underline hover:text-white"
+            class="text-sm text-accent underline hover:text-gray-100"
         >
           Code
         </a>
