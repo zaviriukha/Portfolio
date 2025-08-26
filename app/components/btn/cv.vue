@@ -2,7 +2,7 @@
 
 <template>
   <a
-    href="/files/cv.pdf"
+    href="/files/cv2.pdf"
     download
     class="gap-2 flex items-center justify-center p-2 rounded-xl uppercase outline outline-2 outline-accent text-accent hover:outline-gray-800 hover:text-gray-800"
   >

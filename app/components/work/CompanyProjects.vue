@@ -108,7 +108,7 @@ const projects = [
           :alt="project.title"
           class="rounded-xl mb-4 h-48 w-full object-cover transition-opacity duration-500"
           @load="handleImageLoad(index)"
-        >
+        />
 
         <div class="text-sm text-accent mb-1">{{ project.category }}</div>
         <h3 class="text-xl font-semibold text-white mb-2 uppercase">

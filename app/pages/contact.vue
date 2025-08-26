@@ -10,7 +10,7 @@
       </p>
       <div class="flex flex-wrap justify-center gap-4 mb-8">
         <a
-          href="/files/cv.pdf"
+          href="/files/cv2.pdf"
           download
           class="bg-accent text-gray-100 px-6 py-3 rounded-full font-semibold hover:bg-opacity-80 transition"
         >
